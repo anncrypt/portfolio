@@ -1,7 +1,7 @@
 .main-header {
   display: flex;
   flex-direction: column;
-  padding: 0 60px 110px 60px;
+  padding: 0 60px 140px 60px;
 
   .main-nav {
     margin: 15px 0;
@@ -21,57 +21,68 @@
 
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-around;
   align-items: center;
 
     .my-pic-container {
       display: flex;
       align-items: flex-end;
       margin-top: 2.5rem;
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        background-image: url('../assets/texture.png');
+        bottom: 20px;
+        width: 500px;
+        right: 0;
+        height: 330px;
+        z-index: 1;
+      }
 
       .my-pic {
         width: 80%;
-        box-shadow: 50px 20px $accent-color;
+        box-shadow: 30px 30px $accent-color;
+        z-index: 2;
+        
+        
       }
     }
-    h1 {
-      position: relative;
-      line-height: 1.7rem;
-      &::after {
-        content: "";
-        position: absolute;
-        background-color: $bright-color;
-        bottom: -10px;
-        width: 100px;
-        right: 40%;
-        height: 2px;
-      }
-      // text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
-      // text-shadow: 
-      //   0px 4px 3px rgba(0,0,0,0.4),
-      //   0px 8px 13px rgba(0,0,0,0.1),
-      //   0px 18px 23px rgba(0,0,0,0.1);
-        .io {
-          font-weight: bold;
-          color: $dark-color;
-          display: block;
-          // color: $bright-color;
-          // text-decoration: underline $bright-color;
-          font-family: $base-font;
-          font-size: 3rem;
-          text-transform: uppercase;
-          margin: 0;
-          margin-top: 5px;
-          // &::after{
-          //   content: "";
-          //   position: absolute;
-          //   background-color: $bright-color;
-          //   bottom: -10px;
-          //   width: 100px;
-          //   right: 40%;
-          //   height: 2px;
-          // }
+    .headding-container { 
+      display: flex;
+      flex-direction: column;
+      margin-left: 3rem;
+      margin-top: 2rem;
+      h1 {
+        position: relative;
+        line-height: 3.3rem;
+      
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $bright-color;
+          top: -10px;
+          width: 90px;
+          left: 0;
+          height: 2px;
         }
+          .io {
+            font-weight: bold;
+            color: $dark-color;
+            display: block;
+            font-family: $base-font;
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 5px;
+          }
+      }
+      h3 {
+        margin-top: 1.5rem;
+        font-family: $secondary-font;
+        text-transform: lowercase;
+        font-weight: normal;
+      }
     }
   }
 }

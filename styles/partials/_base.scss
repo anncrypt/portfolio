@@ -11,7 +11,7 @@ section {
 } 
 
 p {
-  font-family: $accent-font;
+  font-family: $secondary-font;
   color: $primary-color;
   font-size: 1rem;
   letter-spacing: 0.025rem;
@@ -22,17 +22,27 @@ h1, h2, h3, h4 {
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: normal;
 }
 
 h2 {
   font-size: 2.5rem;
-  
+  margin: 0 0 20px 60px;
+  position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $bright-color;
+      top: -10px;
+      width: 90px;
+      left: -20px;
+      height: 2px;
+    }
 }
 
 h3 {
@@ -41,7 +51,7 @@ h3 {
 
 h4 {
   font-size: 1.1rem;
-  font-family: $accent-font;
+  font-family: $secondary-font;
   font-weight: normal;
 }
 

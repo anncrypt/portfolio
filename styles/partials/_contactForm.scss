@@ -6,13 +6,28 @@
     flex-direction: column;
     justify-content: center;
     width: 60%;
-      input {
-        padding: 10px 20px;
-      }
+    margin: 0 auto;
+    margin-top: 50px;
+
+    input,
+    textarea {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      border: 1px solid $primary-color;
+    }
 
     .submit {
       padding: 1rem;
       background: $accent-color;
+      border: none;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $bright-color;
+        color: $light-color;
+        transition: ease-in 0.2s;
+      }
     }
   }
 }

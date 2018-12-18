@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Anna Ionova | Front-End Developer</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700" rel="stylesheet">
@@ -57,8 +58,10 @@
         <div class="my-pic-container">
           <img class="my-pic" src="assets/anna.jpg" alt="my picture">
         </div>
-        <h1>Anna <span class="io">Ionova</span></h1>
-        <h2 id="message"></h2>
+        <div class="headding-container">
+          <h1>Anna <span class="io">Ionova</span></h1>
+          <h3>front-end web developer</h3>
+        </div>
       </div>
     </header>
     <!-- HEADER ENDSS -->
@@ -67,8 +70,8 @@
   <div class="darker-section">
     <section id="about" class="about-me wrapper">
       <div class="content-container">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, qui atque eum aperiam, nulla ut reprehenderit porro tempora debitis consequuntur pariatur sunt dolor maiores repellat ea. Dolorum possimus saepe illum!</p>
+        <h2>About Me</h2>
+        <p>Hi! My name is Anna and I’m a front-end web developer based in Toronto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint corrupti quae distinctio eum nobis tenetur unde tempora! Consequuntur dicta beatae ad consectetur, reiciendis cum alias placeat, officia, mollitia corrupti ipsam!</p>
       </div>
       <div class="images-container">
         <div class="left-image-container">
@@ -93,12 +96,12 @@
         as the weather forecast over the course of a trip. The weather data shown is based on starting and ending points, as
         well as date & time. You can also save trips to come back to them later.</p>
         <div class="portfolio-piece-buttons">
-          <a class="portfolio-button" href="">Github</a>
-          <a class="portfolio-button" href="">Live</a>
+          <a class="portfolio-button" href="https://github.com/anncrypt/project-six">Github</a>
+          <a class="portfolio-button" href="https://wayfarerapp-23437.firebaseapp.com">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="http://" target="_blank">
+        <a href="https://wayfarerapp-23437.firebaseapp.com" target="_blank">
           <img src="assets/portfolio/wayfarer-app.jpg" alt="map with camera, backpack and other travel objects on top">
         </a>
       </div>
@@ -107,14 +110,14 @@
       <div class="portfolio-piece-content">
         <h3>Dreamboard</h3>
         <h4>JavaScript / React / Firebase</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi id minima veritatis saepe atque, nesciunt maiores in.</p>
+        <p>Upload images of your dreams to the dreamboard and categorize them by type.</p>
         <div class="portfolio-piece-buttons">
-          <a class="portfolio-button" href="">Github</a>
-          <a class="portfolio-button" href="">Live</a>
+          <a class="portfolio-button" href="https://github.com/anncrypt/anna_ionova_project5">Github</a>
+          <a class="portfolio-button" href="https://dreamboard-ee258.firebaseapp.com">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="http://" target="_blank">
+        <a href="https://dreamboard-ee258.firebaseapp.com" target="_blank">
           <img src="assets/portfolio/dreamboard-app.jpg" alt="various images clipped to a wall">
         </a>
       </div>
@@ -125,12 +128,12 @@
         <h4>JavaScript / JQuery / HTML5 / SASS</h4>
         <p>Improve your poetry writing skills! Orange App provides rhyme options to aid your creations.</p>
         <div class="portfolio-piece-buttons">
-          <a class="portfolio-button" href="">Github</a>
-          <a class="portfolio-button" href="">Live</a>
+          <a class="portfolio-button" href="https://github.com/anncrypt/project4-anna-janet">Github</a>
+          <a class="portfolio-button" href="/orange">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="http://" target="_blank">
+        <a href="/orange" target="_blank">
           <img src="assets/portfolio/orange-app.jpg" alt="open empty notebook and hand holding a pen">
         </a>
       </div>
@@ -155,66 +158,54 @@
         <h4>HTML5 / SASS / JsvsScript / JQuery / GIT</h4>
         <p>Find the breed of your dream pup based on your lifestyle & needs. find your perfect dog breed</p>
         <div class="portfolio-piece-buttons">
-          <a class="portfolio-button" href="">Github</a>
-          <a class="portfolio-button" href="">Live</a>
+          <a class="portfolio-button" href="https://github.com/anncrypt/anna_ionova_project3">Github</a>
+          <a class="portfolio-button" href="/pupmatcher">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="http://" target="_blank">
+        <a href="/pupmatcher" target="_blank">
           <img src="assets/portfolio/pupmatcher-app.jpg" alt="beagle puppy in a backpack, looking out">
         </a>
       </div>
     </div>
   </section>
   <!-- MY PROJECTS SECTION ENDS -->
-  <div class="bright-section ">
+  <div class="bright-section">
     <!-- MY SKILLS SECTION STARTS -->
     <section id="skills" class="my-skills wrapper">
       <h2>Skills</h2>
       <ul>
-        <!-- html5 -->
         <li class="skills-item">
-          <i class="fab fa-html5"></i>
+          <i class="devicon-html5-plain skill"></i>
         </li>
-        <!-- css3 -->
         <li class="skills-item">
-          <i class="fab fa-css3-alt"></i>
+          <i class="devicon-css3-plain skill"></i>
         </li>
-        <!-- sass -->
         <li class="skills-item">
-          <i class="fab fa-sass"></i>
+          <i class="devicon-sass-original skill"></i>
         </li>
-        <!-- javascript -->
         <li class="skills-item">
-          <i class="fab fa-js-square"></i>
+          <i class="devicon-javascript-plain skill"></i>
         </li>
-        <!-- jquery -->
         <li class="skills-item">
-          <img src="assets/jquery.svg" alt="jquery svg icon">
+          <i class="devicon-jquery-plain skill"></i>
         </li>
-        <!-- react -->
         <li class="skills-item">
-          <i class="fab fa-react"></i>
+          <i class="devicon-react-original skill"></i>
         </li>
-        <!-- github -->
         <li class="skills-item">
-          <i class="fab fa-github"></i>
+          <i class="devicon-github-plain skill"></i>
         </li>
-        <!-- git -->
         <li class="skills-item">
           <i class="fas fa-terminal"></i>
         </li>
-        <!-- visual studio -->
         <li class="skills-item">
-          <svg viewBox="0 0 128 128">
-            <path class="a" d="M95 2.3l30.5 12.3v98.7L94.8 125.7 45.8 77l-31 24.1L2.5 94.9V33.1l12.3-5.9 31 24.3ZM14.8 45.7V83.2l18.5-19Zm48.1 18.5L94.8 89.3V39Z"></path>
-          </svg>
+          <i class="devicon-visualstudio-plain skill"></i>
         </li>
-        <!-- firebase -->
         <li class="skills-item">
           <img src="assets/firebase.svg" alt="firebase svg icon">
         </li>
-      </ul>
+      </ul> 
     </section>
     <!-- MY SKILLS SECTION ENDS -->
   </div>
@@ -223,9 +214,9 @@
   <section id="contact" class="contact wrapper">
     <h2>Say Hello</h2>
     <form class="contact-form" action="https://formspree.io/anncrypted@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="name" aria-label="name" required="">
-      <input type="email" name="email" aria-label="email address" placeholder="your@email.com" required="">
-      <textarea name="comments" id="message" placeholder="message" aria-label="message" required=""></textarea>
+      <input type="text" name="name" placeholder="name" aria-label="name" required>
+      <input type="email" name="email" aria-label="email address" placeholder="your@email.com" required>
+      <textarea rows="4" name="comments" id="message" placeholder="message" aria-label="message" required></textarea>
       <input type="submit" class="submit" value="send">
     </form>
   </section>

@@ -1,6 +1,7 @@
 .portfolio-piece-buttons {
   display: flex;
   flex-wrap: wrap;
+
   .portfolio-button {
     padding: 10px 20px;
     border: 1px solid $accent-color;
@@ -20,7 +21,6 @@
         border: 1px solid $bright-color;
         background: white;
         color:$dark-color;
-        // background: $bright-color;
       }
     }
     &:hover {
