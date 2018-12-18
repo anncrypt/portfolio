@@ -1,0 +1,75 @@
+body {
+  font-size: 62.5%;
+  font-family: $base-font;
+  color: $dark-color;
+  background: white;
+}
+
+section {
+ padding: 100px 0;
+ margin: 0 auto;
+} 
+
+p {
+  font-family: $accent-font;
+  color: $primary-color;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+  line-height: 2rem;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.5rem;
+  
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-family: $accent-font;
+  font-weight: normal;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.darker-section {
+  background: $light-color;
+}
+
+.bright-section {
+  background: $bright-color;
+  color: white;
+  // padding: 0;
+}
+
+.footer-section {
+  background: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $dark-color;
+  text-decoration: none;
+}

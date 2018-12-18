@@ -1,0 +1,18 @@
+.contact {
+
+  .contact-form {
+    display: flex;
+    padding: 0 3rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+      input {
+        padding: 10px 20px;
+      }
+
+    .submit {
+      padding: 1rem;
+      background: $accent-color;
+    }
+  }
+}

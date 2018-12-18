@@ -1,0 +1,32 @@
+.portfolio-piece-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  .portfolio-button {
+    padding: 10px 20px;
+    border: 1px solid $accent-color;
+    background: $accent-color;
+    color: $dark-color;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    
+    &:first-child {
+      margin-right: 20px;
+      border: 1px solid $primary-color;
+      background: none;
+
+      &:hover {
+        transition: ease-in 0.2s;
+        border: 1px solid $bright-color;
+        background: white;
+        color:$dark-color;
+        // background: $bright-color;
+      }
+    }
+    &:hover {
+      border: 1px solid $bright-color;
+      background: $bright-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,508 @@
+/*GENERAL STYLING*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background: white; }
+
+section {
+  padding: 100px 0;
+  margin: 0 auto; }
+
+p {
+  font-family: "Merriweather", serif;
+  color: #777;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+  line-height: 2rem; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.1rem;
+  font-family: "Merriweather", serif;
+  font-weight: normal; }
+
+.wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.darker-section {
+  background: #f6f6f6; }
+
+.bright-section {
+  background: #E24242;
+  color: white; }
+
+.footer-section {
+  background: #333; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+.social-nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-right: 10px;
+  -webkit-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  transform: translateY(-90%); }
+  .social-nav .social-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 1.8rem; }
+    .social-nav .social-link:hover {
+      -webkit-transition: ease-in 0.2s;
+      -o-transition: ease-in 0.2s;
+      transition: ease-in 0.2s;
+      color: #E0E242; }
+
+.portfolio-piece-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .portfolio-piece-buttons .portfolio-button {
+    padding: 10px 20px;
+    border: 1px solid #E0E242;
+    background: #E0E242;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem; }
+    .portfolio-piece-buttons .portfolio-button:first-child {
+      margin-right: 20px;
+      border: 1px solid #777;
+      background: none; }
+      .portfolio-piece-buttons .portfolio-button:first-child:hover {
+        -webkit-transition: ease-in 0.2s;
+        -o-transition: ease-in 0.2s;
+        transition: ease-in 0.2s;
+        border: 1px solid #E24242;
+        background: white;
+        color: #333; }
+    .portfolio-piece-buttons .portfolio-button:hover {
+      border: 1px solid #E24242;
+      background: #E24242;
+      color: white; }
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 60px 110px 60px; }
+  .main-header .main-nav {
+    margin: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .main-header .main-nav ul {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .main-header .short-about-me {
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .main-header .short-about-me .my-pic-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      margin-top: 2.5rem; }
+      .main-header .short-about-me .my-pic-container .my-pic {
+        width: 80%;
+        -webkit-box-shadow: 50px 20px #E0E242;
+        box-shadow: 50px 20px #E0E242; }
+    .main-header .short-about-me h1 {
+      position: relative;
+      line-height: 1.7rem; }
+      .main-header .short-about-me h1::after {
+        content: "";
+        position: absolute;
+        background-color: #E24242;
+        bottom: -10px;
+        width: 100px;
+        right: 40%;
+        height: 2px; }
+      .main-header .short-about-me h1 .io {
+        font-weight: bold;
+        color: #333;
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 5px; }
+
+.main-nav li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 5px 10px; }
+  .main-nav li a {
+    padding: 5px 0;
+    border-top: solid #333 1px; }
+    .main-nav li a:hover {
+      border-top: solid #E24242 1px; }
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .about-me .content-container {
+    width: calc(50% - 40px);
+    margin-right: 40px;
+    text-align: right; }
+  .about-me .images-container {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .about-me .images-container .left-image-container {
+      width: 40%; }
+      .about-me .images-container .left-image-container img {
+        width: 100%; }
+    .about-me .images-container .right-image-container {
+      width: 40%; }
+      .about-me .images-container .right-image-container img {
+        width: 100%; }
+
+.my-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .my-portfolio h2 {
+    margin-bottom: 30px; }
+  .my-portfolio .portfolio-piece {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 60px; }
+    .my-portfolio .portfolio-piece:nth-child(2n) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+      .my-portfolio .portfolio-piece:nth-child(2n) .portfolio-piece-content {
+        margin-right: 0;
+        margin-left: 100px;
+        text-align: left;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; }
+      .my-portfolio .portfolio-piece:nth-child(2n) .portfolio-piece-image {
+        text-align: right; }
+    .my-portfolio .portfolio-piece .portfolio-piece-content {
+      width: 40%;
+      margin-right: 100px;
+      text-align: right;
+      padding-bottom: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      .my-portfolio .portfolio-piece .portfolio-piece-content p {
+        margin-bottom: 20px; }
+      .my-portfolio .portfolio-piece .portfolio-piece-content h3 {
+        margin-bottom: 20px; }
+    .my-portfolio .portfolio-piece .portfolio-piece-image {
+      width: 40%;
+      text-align: left; }
+      .my-portfolio .portfolio-piece .portfolio-piece-image img {
+        width: 70%;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1); }
+        .my-portfolio .portfolio-piece .portfolio-piece-image img:hover {
+          -webkit-filter: none;
+          filter: none;
+          -webkit-transition: 0.5s ease-in-out;
+          -o-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out; }
+
+.my-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .my-skills h2 {
+    margin-top: 0;
+    margin-bottom: 80px;
+    width: 100%; }
+  .my-skills ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .my-skills ul .skills-item {
+      list-style: none;
+      width: 20%;
+      padding: 15px 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+
+.skills-item i {
+  font-size: 8rem; }
+
+.skills-item svg {
+  width: 40%;
+  fill: white; }
+
+.skills-item img {
+  width: 40%;
+  color: white; }
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 60%; }
+  .contact .contact-form input {
+    padding: 10px 20px; }
+  .contact .contact-form .submit {
+    padding: 1rem;
+    background: #E0E242; }
+
+footer p {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 0.8rem; }

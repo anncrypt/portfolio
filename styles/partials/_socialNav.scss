@@ -1,0 +1,22 @@
+.social-nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-right: 10px;
+  -webkit-transform: translateY(-90%);
+  -ms-transform: translateY(-90%);
+  transform: translateY(-90%);
+  
+  .social-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    font-size: 1.8rem;
+    
+    &:hover {
+      transition: ease-in 0.2s;
+      color: $accent-color;
+    }
+  }
+}

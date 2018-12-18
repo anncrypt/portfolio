@@ -1,0 +1,93 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px 110px 60px;
+
+  .main-nav {
+    margin: 15px 0;
+
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      width: 50%;
+
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .short-about-me {
+  height: 50vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-around;
+  align-items: center;
+
+    .my-pic-container {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 2.5rem;
+
+      .my-pic {
+        width: 80%;
+        box-shadow: 50px 20px $accent-color;
+      }
+    }
+    h1 {
+      position: relative;
+      line-height: 1.7rem;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $bright-color;
+        bottom: -10px;
+        width: 100px;
+        right: 40%;
+        height: 2px;
+      }
+      // text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+      // text-shadow: 
+      //   0px 4px 3px rgba(0,0,0,0.4),
+      //   0px 8px 13px rgba(0,0,0,0.1),
+      //   0px 18px 23px rgba(0,0,0,0.1);
+        .io {
+          font-weight: bold;
+          color: $dark-color;
+          display: block;
+          // color: $bright-color;
+          // text-decoration: underline $bright-color;
+          font-family: $base-font;
+          font-size: 3rem;
+          text-transform: uppercase;
+          margin: 0;
+          margin-top: 5px;
+          // &::after{
+          //   content: "";
+          //   position: absolute;
+          //   background-color: $bright-color;
+          //   bottom: -10px;
+          //   width: 100px;
+          //   right: 40%;
+          //   height: 2px;
+          // }
+        }
+    }
+  }
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+
+  a {
+    padding: 5px 0;
+    border-top: solid $dark-color 1px;
+    &:hover {
+      border-top: solid $bright-color 1px;
+    }
+  }
+}
+
