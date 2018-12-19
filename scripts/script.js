@@ -50,20 +50,26 @@ $(document).ready(function () {
   const win = $(window);
   const allPortfolioPieces = $(".portfolio-piece");
 
-  allPortfolioPieces.each(function (i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("already-visible");
-    }
-  });
+  const pageWidth = window.innerWidth;
 
-  win.scroll(function (event) {
+  if (pageWidth > 991) {
     allPortfolioPieces.each(function (i, el) {
       var el = $(el);
       if (el.visible(true)) {
-        el.addClass("come-in");
+        el.addClass("already-visible");
       }
     });
-  });
+
+    win.scroll(function (event) {
+      allPortfolioPieces.each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+          el.addClass("come-in");
+        }
+      });
+    });
+  }
+
+  
 
 });

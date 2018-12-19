@@ -45,13 +45,9 @@
         width: 80%;
         box-shadow: 30px 30px $accent-color;
         z-index: 2;
-        // box-shadow: -10px -10px $bright-color;
-        // border-left: 3px solid $bright-color;
-        
-        
       }
     }
-    .headding-container { 
+    .heading-container { 
       display: flex;
       flex-direction: column;
       margin-left: 4rem;
@@ -71,7 +67,6 @@
         }
           .io {
             font-weight: bold;
-            // color: $dark-color;
             color: $bright-color;
             display: block;
             font-family: $base-font;

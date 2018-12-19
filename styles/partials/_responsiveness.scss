@@ -1,0 +1,141 @@
+@media (max-width: 1100px) {
+
+  .main-header .main-nav {
+    justify-content: center;
+
+    ul {
+      width: 65%;
+    }
+  }
+
+  .my-pic-container {
+    width: 40%;
+    &::after {
+      bottom: 10px;
+      width: 200px;
+      right: 0;
+      height: 220px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .main-header {
+    .main-nav {
+
+      ul {
+        width: 80%;
+      }
+    }
+ 
+    .short-about-me {
+      margin-top: 30px;
+
+      .my-pic-container {
+        justify-content: center;
+
+        &::after {
+          display: none;
+        }
+
+        .my-pic {
+          box-shadow: none;
+          width: 100%;
+        }
+      }
+
+      .heading-container {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }  
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+
+    .content-container {
+      width: 90%;
+      margin-bottom: 40px;
+    }
+
+    .images-container {
+      width: 75%;
+    }
+  }
+
+  .my-portfolio {
+    padding-bottom: 20px;
+  }
+
+  .my-portfolio .portfolio-piece:nth-child(2n),
+  .my-portfolio .portfolio-piece {
+
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .portfolio-piece-image {
+      width: 60%;
+      text-align: center;
+      margin-bottom: 20px;
+
+      img {
+        box-shadow: none;
+      }
+    }
+
+    .portfolio-piece-content {
+      width: 60%;
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .main-header {
+    background-image: url('../assets/anna.jpg');
+    background-size: cover;
+
+    height: 700px;
+    padding-bottom: 30px;
+ 
+    .short-about-me {
+      justify-content: flex-end;
+      flex-grow: 1;
+
+      .my-pic-container {
+        display: none;
+        width: 70%;
+        margin-top: 0;
+        text-align: center;
+       
+          .my-pic {
+            width: 70%;
+            margin: 0 auto;
+          box-shadow: none;
+        }
+      }
+
+      .heading-container {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .contact .contact-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 340px) {
+
+
+}
