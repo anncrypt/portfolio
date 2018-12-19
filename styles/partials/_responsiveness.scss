@@ -109,6 +109,11 @@
     display: none;
   }
 
+  .hamburger-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .main-header .main-nav ul {
     display: none;
   }

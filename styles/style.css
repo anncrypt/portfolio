@@ -365,13 +365,8 @@ a {
   display: none; }
 
 .hamburger-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  display: none;
+  width: 100%; }
 
 .open-hamburger {
   display: none;
@@ -770,6 +765,13 @@ footer p {
 @media (max-width: 768px) {
   .social-nav {
     display: none; }
+  .hamburger-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
   .main-header .main-nav ul {
     display: none; }
   .main-header {
