@@ -1,14 +1,15 @@
 .about-me {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 
   .content-container {
-    width: calc(50% - 40px);
-    margin-right: 40px;
-    text-align: right;
+    width: calc(50% - 60px);
+    margin-right: 60px;
+    // text-align: right;
     
     p {
-      margin-left: 40px;
+      margin-left: 60px;
       text-align: left;
     }
   }
@@ -23,7 +24,7 @@
       width: 45%;
       img {
         width: 100%;
-        box-shadow: 150px 30px $accent-color;
+        box-shadow: 120px 50px $accent-color, 120px 70px $accent-color;
       }
     }
     .right-image-container {
@@ -33,7 +34,8 @@
       img {
         width: 100%;
         position: absolute;
-        bottom: -45px;
+        bottom: -30px;
+        // box-shadow: -30px 10px $bright-color;
       }
     }
   }

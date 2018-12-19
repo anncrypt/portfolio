@@ -28,6 +28,7 @@
       align-items: flex-end;
       margin-top: 2.5rem;
       position: relative;
+
       &::after {
         content: "";
         display: inline-block;
@@ -44,6 +45,8 @@
         width: 80%;
         box-shadow: 30px 30px $accent-color;
         z-index: 2;
+        // box-shadow: -10px -10px $bright-color;
+        // border-left: 3px solid $bright-color;
         
         
       }
@@ -51,7 +54,7 @@
     .headding-container { 
       display: flex;
       flex-direction: column;
-      margin-left: 3rem;
+      margin-left: 4rem;
       margin-top: 2rem;
       h1 {
         position: relative;
@@ -68,7 +71,8 @@
         }
           .io {
             font-weight: bold;
-            color: $dark-color;
+            // color: $dark-color;
+            color: $bright-color;
             display: block;
             font-family: $base-font;
             font-size: 4rem;

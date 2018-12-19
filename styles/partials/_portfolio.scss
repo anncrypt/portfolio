@@ -1,6 +1,7 @@
 .my-portfolio {
   display: flex;
   flex-direction: column;
+
   h2 {
     margin-bottom: 30px;
   }
@@ -12,52 +13,105 @@
     
     &:nth-child(2n) {
       flex-direction: row-reverse;
+
       .portfolio-piece-content {
+        position: relative;
         margin-right: 0;
-        margin-left: 100px;
+        margin-left: 70px;
         text-align: left;
+        // box-shadow: 2px 2px $bright-color;
 
         justify-content: flex-end;
         align-items: flex-start;
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   background-color: $bright-color;
+        //   top: 80px;
+        //   width: 200px;
+        //   right: 100px;
+        //   height: 2px;
+        //   z-index: 2;
+        // }
       }
       .portfolio-piece-image {
         text-align: right;
+        // background-color: $bright-color;
+        
+        img {
+          filter: none;
+          box-shadow: -30px 20px $bright-color, -50px 20px $bright-color;
+        }
       }
     }
 
     .portfolio-piece-content {
       width: 40%;
-      margin-right: 100px;
+      margin-right: 70px;
       text-align: right;
       padding-bottom: 40px;
+      // position: relative;
 
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: flex-end;
       align-items: flex-end;
+
       p {
         margin-bottom: 20px;
       }
       h3 {
         margin-bottom: 20px;
       }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   background-color: $bright-color;
+      //   top: 80px;
+      //   width: 200px;
+      //   left: -100px;
+      //   height: 2px;
+      //   z-index: 2;
+      // }
     }
 
     .portfolio-piece-image {
       width: 40%;
       text-align: left;
+      z-index: 1;
       
       img {
         width: 70%;
-        -webkit-filter: grayscale(1);
-        filter: grayscale(1);
+        // -webkit-filter: grayscale(1);
+        // filter: grayscale(1);
+        // filter: none;
+        box-shadow: 30px 20px $bright-color, 50px 20px $bright-color;
         &:hover {
-        -webkit-filter: none;
-        filter: none;
-        transition: 0.5s ease-in-out;
+        // -webkit-filter: none;
+        // filter: none;
+        // transition: 0.5s ease-in-out;
         }
       }
     }
   }
+}
+
+/* SCROLL FROM THE SIDE */
+.come-in {
+  // transform: translateY(150px);
+  transform: translateX(-150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+  transform: translateX(150px);
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
