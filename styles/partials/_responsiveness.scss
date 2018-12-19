@@ -94,11 +94,24 @@
       align-items: center;
       margin: 0 auto;
     }
+
   }
 
+  .my-skills ul {
+    .skills-item img {
+      width: 45%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
+  .social-nav {
+    display: none;
+  }
+
+  .main-header .main-nav ul {
+    display: none;
+  }
 
   .main-header {
     background-image: url('../assets/anna.jpg');
@@ -106,9 +119,14 @@
 
     height: 700px;
     padding-bottom: 30px;
+
+    // width: 100%;
+    padding: 20px;
+
  
     .short-about-me {
       justify-content: flex-end;
+      align-items: flex-end;
       flex-grow: 1;
 
       .my-pic-container {
@@ -117,25 +135,74 @@
         margin-top: 0;
         text-align: center;
        
-          .my-pic {
-            width: 70%;
-            margin: 0 auto;
+        .my-pic {
+          width: 70%;
+          margin: 0 auto;
           box-shadow: none;
         }
       }
 
       .heading-container {
         margin-left: 30px;
+
+        h1,
+        h3 {
+          color: white;
+        }
       }
     }
   }
 
+
+  .my-portfolio .portfolio-piece:nth-child(2n),
+  .my-portfolio .portfolio-piece {
+    width: 100%;
+
+    .portfolio-piece-content,
+    .portfolio-piece-image {
+      width: 90%;
+    }
+
+    .portfolio-piece-content {
+      h3,
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+
+  .my-skills ul {
+    width: 100%;
+    padding-left: 0;
+
+    // .skills-item img {
+    //   width: 45%;
+    // }
+  }
+
   .contact .contact-form {
-    width: 80%;
+    width: 100%;
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 550px) {
+  .my-skills ul .skills-item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
 
+@media (max-width: 430px) {
+  /* hamburger menu */
+  .mobile-nav-list li a {
+    font-size: 1.6rem;
+  }
 
+  .mobile-nav-social-list {
+      li {
+        .social-link {
+          font-size: 1.6rem;
+        }
+      }
+  }
 }

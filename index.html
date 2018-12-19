@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
   <!-- STICKY SOCIAL NAVBAR STARTS -->
@@ -45,6 +47,52 @@
   <div class="wrapper">
     <!-- HEADER STARTS -->
     <header class="main-header">
+        <!-- HAMBURGER STARTS - NOT VISIBLE FOR DESCTOP SIZE-->
+        <div class="hamburger-container">
+          <a href="#" class="open-hamburger">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <div class="mobile-nav">
+          <div class="mobile-nav-controls">
+            <a href="#" class="close-hamburger">
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+          <ul class="mobile-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Say Hi</a></li>
+          </ul>
+          <ul class="mobile-nav-social-list">
+            <li>
+              <a class="social-link" href="http://www.twitter.com/anncrypt" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/in/annaionova/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://github.com/anncrypt/" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://medium.com/@anncrypt" target="_blank"><i class="fab fa-medium-m"></i></a>
+            </li>
+            <li>
+              <a class="social-link" href="mailto:anncrypted@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- hamburger menu ends -->
       <nav class="main-nav">
         <ul>
           <li><a class="main-nav-link" href="#home">Home</a></li>
@@ -229,6 +277,11 @@
   </div>
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <!-- jquery for hamburger menu -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

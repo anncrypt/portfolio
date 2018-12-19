@@ -70,6 +70,33 @@ $(document).ready(function () {
     });
   }
 
+
+
+  // when we click on .open-hamburger,
+  // it should open
+  $('.open-hamburger').on('click', function () {
+    // slide the menu into view from left
+    $('.mobile-nav').toggle("slide", { direction: "right" });
+    // Add a class to body that stops scrolling
+    $('body').addClass('preventAllScrollingOnBody');
+  });
+  // when we click on .close-hamburger,
+  // it should close
+  $('.close-hamburger').on('click', function () {
+    // slide the menu out of view from left
+    $('.mobile-nav').toggle("slide", { direction: "right" });
+    // Remove a class that stops scrolling from body
+    $('body').removeClass('preventAllScrollingOnBody');
+  });
+  // When we click on any link in the list
+  // the menu should close
+  $('.mobile-nav-list a').on('click', function () {
+    // Hide mobile nav menu
+    $('.mobile-nav').hide();
+    // Remove a class that stops scrolling from body
+    $('body').removeClass('preventAllScrollingOnBody');
+  });
+
   
 
 });
