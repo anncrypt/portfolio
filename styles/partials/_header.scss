@@ -92,11 +92,11 @@
   font-size: 0.9rem;
   padding: 5px 10px;
 
-  a {
+  .main-nav-link {
     padding: 5px 0;
-    border-top: solid $dark-color 1px;
+    border-top: solid $dark-color 2px;
     &:hover {
-      border-top: solid $bright-color 1px;
+      border-top: solid $bright-color 2px;
     }
   }
 }

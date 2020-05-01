@@ -354,11 +354,11 @@ a {
   font-weight: 700;
   font-size: 0.9rem;
   padding: 5px 10px; }
-  .main-nav li a {
+  .main-nav li .main-nav-link {
     padding: 5px 0;
-    border-top: solid #333 1px; }
-    .main-nav li a:hover {
-      border-top: solid #E24242 1px; }
+    border-top: solid #333 2px; }
+    .main-nav li .main-nav-link:hover {
+      border-top: solid #E24242 2px; }
 
 /* HAMBURGER MENU DEFAULTS */
 .mobile-nav {

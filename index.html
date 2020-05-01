@@ -95,11 +95,23 @@
         <!-- hamburger menu ends -->
       <nav class="main-nav">
         <ul>
-          <li><a class="main-nav-link" href="#home">Home</a></li>
-          <li><a class="main-nav-link" href="#about">About</a></li>
-          <li><a class="main-nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="main-nav-link" href="#skills">Skills</a></li>
-          <li><a class="main-nav-link" href="#contact">Say Hi</a></li>
+          <li>
+            <a class="main-nav-link" href="#home">Home
+              <div class="main-nav-link--topline"></div>
+            </a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <!-- <li>
+            <a class="main-nav-link" href="#skills">Skills</a>
+          </li> -->
+          <li>
+            <a class="main-nav-link" href="#contact">Say Hi</a>
+          </li>
         </ul>
       </nav>
       <div class="short-about-me">
@@ -108,19 +120,19 @@
         </div>
         <div class="heading-container">
           <h1>Ani <span class="io">Ionova</span></h1>
-          <h3>web developer</h3>
+          <h3>software developer</h3>
         </div>
       </div>
     </header>
-    <!-- HEADER ENDSS -->
+    <!-- HEADER ENDS -->
   </div>
     <!-- ABOUT ME SECTION STARTS -->
   <div class="darker-section">
     <section id="about" class="about-me wrapper">
       <div class="content-container">
         <h2>About Me</h2>
-        <p>Hi, I’m Ani! I am a web developer based in Toronto, most passionate about React ecosystem and everything that it makes possible. I would love to be a part of a team that cultivates growth, creative thinking & innovation.</p>
-        <p>Apart from coding, I dabble in photography and I am always up for a bicycle ride or a yoga session!</p>
+        <p>Hello there &#x1F44B;</p> 
+        <p>I'm a Full Stack Software Developer at TouchBistro. Most passionate about React ecosystem & Node.js. I enjoy being a part of a team that cultivates growth, creative thinking & innovation.</p>
       </div>
       <div class="images-container">
         <div class="left-image-container">
@@ -156,18 +168,17 @@
     </div>
     <div class="portfolio-piece">
       <div class="portfolio-piece-content">
-        <h3>Wayfarer</h3>
-        <h4>React / API / Rest API / HTML5+JSX / SASS / Firebase</h4>
-        <p>Wayfarer App uses Google Maps to show the route for your roadtrip, as well as the weather forecast over the course.</p>
-        <!-- <p>In collaboration with <a href="https://anamaljkovic.com/" target="_blank">Ana Maljkovic</a> & <a href="http://annephits.com/">Anne Phitsanoukanh</a></p> -->
+        <h3>Company Website</h3>
+        <h4>JavaScript / jQuery / SASS / HTML5</h4>
+        <p>Pixel perfect multipage site with various animations. Built with JS, HTML5 & SASS then transferred into Wordpress templates</p>
         <div class="portfolio-piece-buttons">
-          <a class="portfolio-button" target="_blank" href="https://github.com/anncrypt/project-six">Github</a>
-          <a class="portfolio-button" target="_blank" href="https://wayfarerapp-23437.firebaseapp.com">Live</a>
+          <a disabled="true" class="portfolio-button" target="_blank" href="https://thentia.com">Github</a>
+          <a class="portfolio-button" target="_blank" href="https://thentia.com">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="https://wayfarerapp-23437.firebaseapp.com" target="_blank">
-          <img src="assets/portfolio/wayfarer-app.jpg" alt="map with camera, backpack and other travel objects on top">
+        <a href="https://thentia.com" target="_blank">
+          <img src="assets/portfolio/skyscrapers.jpg" alt="skyscrapers in the sky">
         </a>
       </div>
     </div>
@@ -195,11 +206,11 @@
         <p>A single-page responsive 'client' website. This site was recreated from a PSD design, using Mobile first approach.</p>
         <div class="portfolio-piece-buttons">
           <a class="portfolio-button" target="_blank" href="https://github.com/anncrypt/pup-project">Github</a>
-          <a class="portfolio-button" target="_blank" href="/dog-adoption">Live</a>
+          <a class="portfolio-button" target="_blank" href="https://eager-curie-fb27a4.netlify.app">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="/dog-adoption" target="_blank">
+        <a href="https://eager-curie-fb27a4.netlify.app" target="_blank">
           <img src="assets/portfolio/dog-adoption.jpg" alt="couch with two dogs laying on it">
         </a>
       </div>
@@ -245,11 +256,11 @@
         <p>Find the breed of your dream pup based on your lifestyle & needs. find your perfect dog breed</p>
         <div class="portfolio-piece-buttons">
           <a class="portfolio-button" target="_blank" href="https://github.com/anncrypt/anna_ionova_project3">Github</a>
-          <a class="portfolio-button" target="_blank" href="/pupmatcher">Live</a>
+          <a class="portfolio-button" target="_blank" href="https://sharp-bohr-0e909e.netlify.app">Live</a>
         </div>
       </div>
       <div class="portfolio-piece-image">
-        <a href="/pupmatcher" target="_blank">
+        <a href="https://sharp-bohr-0e909e.netlify.app" target="_blank">
           <img src="assets/portfolio/pupmatcher-app.jpg" alt="beagle puppy in a backpack, looking out">
         </a>
       </div>
@@ -262,6 +273,21 @@
       <h2>Skills</h2>
       <ul>
         <li class="skills-item">
+          <i class="devicon-javascript-plain skill"></i>
+        </li>
+        <li class="skills-item">
+          <i class="devicon-typescript-plain"></i>
+        </li>
+        <li class="skills-item">
+          <i class="devicon-nodejs-plain-wordmark"></i>
+        </li>
+        <li class="skills-item">
+          <i class="devicon-react-original skill"></i>
+        </li>
+        <li class="skills-item">
+          <i class="devicon-postgresql-plain"></i>
+        </li>
+        <li class="skills-item">
           <i class="devicon-html5-plain skill"></i>
         </li>
         <li class="skills-item">
@@ -271,22 +297,7 @@
           <i class="devicon-sass-original skill"></i>
         </li>
         <li class="skills-item">
-          <i class="devicon-javascript-plain skill"></i>
-        </li>
-        <li class="skills-item">
-          <i class="devicon-jquery-plain skill"></i>
-        </li>
-        <li class="skills-item">
-          <i class="devicon-react-original skill"></i>
-        </li>
-        <li class="skills-item">
-          <i class="devicon-github-plain skill"></i>
-        </li>
-        <li class="skills-item">
-          <i class="fas fa-terminal"></i>
-        </li>
-        <li class="skills-item">
-          <i class="devicon-visualstudio-plain skill"></i>
+          <i class="devicon-git-plain"></i>
         </li>
         <li class="skills-item">
           <img src="assets/firebase.svg" alt="firebase svg icon">
@@ -310,7 +321,7 @@
   <!-- </div> -->
   <div class="footer-section">
     <footer class="wrapper">
-      <p>Developed by Ani Ionova 2019.</p>
+      <p>Developed by Ani Ionova 2020.</p>
     </footer>
   </div>
 
